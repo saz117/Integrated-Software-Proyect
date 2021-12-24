@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textStart"
+    android:id="@+id/inicio_layout"
+    android:background="@drawable/degradado">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        >
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+
+            android:layout_above="@id/textoTitulo"
+            android:layout_centerHorizontal="true"
+
+
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/textoTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login_email"
+            android:layout_alignParentRight="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:text="Noted"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="75dp" />
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/campos_relleno"
+            android:drawableLeft="@drawable/ic_round_person_24"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Usuari"
+            android:inputType="textPersonName"
+            android:textAlignment="textStart"
+
+            android:textColorHint="@color/white"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/login_email"
+            android:layout_alignStart="@+id/login_email"
+            android:layout_alignLeft="@+id/login_email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/campos_relleno"
+            android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+            android:ems="10"
+            android:hint="Contrassenya"
+            android:inputType="textPassword"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="El inicio de sesión sincronizará tus notas con Google"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:id="@+id/linearLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/login_password"
+            android:layout_alignLeft="@+id/login_email"
+            android:layout_alignRight="@+id/login_email">
+
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_below="@id/login_password"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boton"
+                android:text="Log In"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_below="@id/login_password"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/button_login"
+                android:background="@drawable/boton"
+                android:text="Register"
+                />
+        </LinearLayout>
+
+
+        <!--
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_marginLeft="30dp"
+     android:layout_marginRight="30dp">
+
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="false"
+         android:layout_marginTop="30dp"
+         android:text="Noted"
+         android:textAppearance="@style/TextAppearance.AppCompat.Display4" />
+
+     <EditText
+         android:id="@+id/login_email"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignWithParentIfMissing="false"
+         android:layout_below="@id/textView2"
+         android:layout_marginStart="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:background="#E8E8E8"
+         android:ems="10"
+         android:hint="correo@entidad.com"
+         android:inputType="textEmailAddress" />
+
+     <EditText
+         android:id="@+id/login_password"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignWithParentIfMissing="false"
+         android:layout_below="@id/login_email"
+         android:layout_marginStart="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:background="#E8E8E8"
+         android:ems="10"
+         android:hint="Password"
+         android:inputType="textPassword" />
+
+     <Button
+         android:id="@+id/button_login"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignWithParentIfMissing="false"
+         android:layout_below="@id/login_password"
+         android:layout_marginStart="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:background="#FF9400"
+         android:text="Log In"
+         app:backgroundTint="#FF9400" />
+
+     <Button
+         android:id="@+id/button_register"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignWithParentIfMissing="false"
+         android:layout_below="@id/login_password"
+         android:layout_marginStart="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_toRightOf="@id/button_login"
+         android:background="#FF9400"
+         android:text="Register"
+         app:backgroundTint="#FF9400" />
+
+     <TextView
+         android:id="@+id/login_message"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignWithParentIfMissing="false"
+         android:layout_below="@id/button_login"
+         android:layout_marginStart="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="50dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginBottom="10dp"
+         android:text="El inicio de sesión sincronizará tus notas con Google" />
+
+
+     <Button
+         android:id="@+id/button_google"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/login_message"
+         android:layout_marginStart="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginBottom="10dp"
+         android:background="@android:color/white"
+         android:drawableStart="@mipmap/googlelogo"
+         android:text="@string/Google"
+         /android:textColor="@color/colorPrimaryDark" />
+     -->
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

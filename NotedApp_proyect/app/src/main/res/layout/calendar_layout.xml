@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/custon_calendar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:background="@color/md_deep_purple_700">
+
+        <ImageView
+            android:id="@+id/calendar_move_back"
+            android:layout_width="40sp"
+            android:layout_height="28sp"
+            android:layout_margin="10sp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4sp"
+            android:layout_weight="2"
+            android:text="currentDate"
+            android:id="@+id/currentDate"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/calendar_move_forward"
+            android:layout_width="40sp"
+            android:layout_height="28sp"
+            android:layout_margin="10sp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4sp"
+        android:paddingBottom="4sp"
+        android:background="@color/cardview_dark_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sun"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="4sp"
+            android:layout_weight="1">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mon"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="4sp"
+            android:layout_weight="1">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="4sp"
+            android:layout_weight="1">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Wed"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="4sp"
+            android:layout_weight="1">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Thu"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="4sp"
+            android:layout_weight="1">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fri"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="4sp"
+            android:layout_weight="1">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sat"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="4sp"
+            android:layout_weight="1">
+        </TextView>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:numColumns="7"></GridView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaCalendario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

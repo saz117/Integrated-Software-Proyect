@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/todo_row_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12sp"
+    android:background="@drawable/fondo_item_nota"
+    android:layout_marginStart="6sp"
+    android:layout_marginEnd="6sp"
+    android:minHeight="30sp"
+
+    >
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="36sp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="275sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:minHeight="50sp">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+    android:minHeight="25sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="4sp"
+
+        android:text="">
+
+    </TextView>
+
+        <TextView
+            android:textColor="@color/md_blue_900"
+            android:id="@+id/editTextDate2"
+            android:layout_width="50sp"
+            android:layout_height="10sp"
+            android:layout_marginBottom="5sp"
+            android:text="data"
+            android:textSize="8sp"
+            android:layout_marginLeft="3sp"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="35sp"
+        android:layout_marginLeft="3sp"
+        android:layout_height="match_parent"
+
+        >
+    <View
+        android:id="@+id/color_todo"
+        android:layout_gravity="center"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:background="@drawable/ic_baseline_priority_low_24"
+
+>
+
+    </View>
+ </FrameLayout>
+    <FrameLayout
+        android:layout_width="35sp"
+        android:layout_marginLeft="3sp"
+        android:layout_height="match_parent"
+
+        >
+        <ImageView
+            android:id="@+id/calendar_path"
+            android:layout_gravity="center"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:padding="10sp"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            >
+
+        </ImageView></FrameLayout>
+
+
+
+</LinearLayout>

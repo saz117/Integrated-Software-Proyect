@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nota_contenedor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12sp"
+    android:background="@drawable/fondo_item_nota"
+    android:layout_marginStart="6sp"
+    android:layout_marginEnd="6sp">
+    <TextView
+        android:id="@+id/color_item"
+        android:layout_width="5sp"
+        android:layout_height="match_parent"
+        android:background="@color/md_blue_600"
+        android:layout_marginStart="8sp"
+        >
+
+    </TextView>
+
+    <LinearLayout
+    android:id="@+id/nota_vista"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:layout_marginStart="3sp">
+
+
+        <TextView
+            android:id="@+id/titulo_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="8sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:includeFontPadding="false"
+            android:text="@string/todo"
+            android:textColor="@color/black"
+            android:textSize="13sp">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/image_item_nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:scaleType="fitCenter"
+
+            android:layout_margin="5sp"
+            android:layout_marginStart="5sp"
+            app:layout_constraintTop_toTopOf="@id/titulo_item"
+
+            >
+        </ImageView>
+        <!-- android:scaleType="fitCenter"
+             android:scaleType="centerCrop"
+
+             android:layout_height="120dp"
+             android:layout_height="wrap_content"
+
+             android:src="@drawable/cielo"
+             -->
+        <TextView
+            android:id="@+id/cuerpo_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="4sp"
+            android:layout_marginEnd="8sp"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/ubuntu"
+            android:includeFontPadding="false"
+            android:text="@string/Textolargo"
+            android:textColor="@color/black"
+
+            android:textSize="10sp"
+            app:layout_constraintTop_toTopOf="@id/image_item_nota"
+            tools:ignore="SmallSp">
+
+
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

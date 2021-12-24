@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "843479592533",
+    "project_id": "pis-appnotas",
+    "storage_bucket": "pis-appnotas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843479592533:android:4850211e17331c9b8caedc",
+        "android_client_info": {
+          "package_name": "com.example.proyectonotaspis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843479592533-0ak0fccg1sfkpitkol7g11j97a6q3q48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm1m4v1dsReZoCi09q2iwOLeDlk2WF-xE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843479592533-0ak0fccg1sfkpitkol7g11j97a6q3q48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

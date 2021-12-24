@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noteview2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_bg"
+    app:behavior_peekHeight="40sp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texto_menu_notas"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Menu"
+        android:textColor="@color/black"
+        android:textSize="13sp">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/layout_opciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5sp">
+            <View
+                android:id="@+id/botonColorAzul"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:background="@drawable/ic_blue">
+
+            </View>
+            <ImageView
+                android:id="@+id/checkColorAzul"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:padding="10sp"
+                android:src="@drawable/ic_check"
+                >
+
+
+            </ImageView>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <View
+                android:id="@+id/botonColorRojo"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:background="@drawable/ic_red">
+
+            </View>
+            <ImageView
+                android:id="@+id/checkColorRojo"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:padding="10sp"
+
+                >
+
+
+            </ImageView>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <View
+                android:id="@+id/botonColorAmarillo"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:background="@drawable/ic_yellow">
+
+            </View>
+            <ImageView
+                android:id="@+id/checkColorAmarillo"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:padding="10sp">
+
+
+            </ImageView>
+
+        </FrameLayout>
+        <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <View
+            android:id="@+id/botonColorNaranja"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:background="@drawable/ic_orange">
+
+        </View>
+        <ImageView
+            android:id="@+id/checkColorNaranja"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:padding="10sp"
+            >
+
+
+        </ImageView>
+
+    </FrameLayout>
+        <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <View
+            android:id="@+id/botonColorMorado"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:background="@drawable/ic_purple">
+
+        </View>
+        <ImageView
+            android:id="@+id/checkColorMorado"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:padding="10sp"
+            >
+
+
+        </ImageView>
+
+    </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <View
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:background="@drawable/layout_bg">
+
+        </View>
+        <ImageView
+            android:id="@+id/botonGuardarFoto"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:padding="10sp"
+            android:layout_marginRight="5sp"
+            android:src="@drawable/ic_foto">
+
+        </ImageView>
+        </FrameLayout>
+
+    </LinearLayout>
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/audio_note"
+            android:layout_width="100sp"
+            android:layout_height="35sp"
+            android:padding="10sp"
+            android:src="@drawable/ic_baseline_mic_none_24"
+            android:layout_margin="10sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </ImageView>
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+    </Chronometer>-->
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
