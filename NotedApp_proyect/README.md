@@ -1,5 +1,5 @@
-# Proyecto_PIS
-App de notas
+# Proyect
+Notes app
 
 ## material.io
 * Notes-Cards: https://material.io/components/cards/android -> DONE
@@ -9,11 +9,11 @@ App de notas
 * Search: https://material.io/design/navigation/search.html#expandable-search -> In Progress
 * Navigation Buttons: https://material.io/components/bottom-navigation#anatomy -> In Progress
 
-## Añadir imagen (SVG pierde colores)
-* Para coger una imagen cualquiera y añadirla al proyecto:
-* Paso1:arrastrar la imagen desde la carpeta PC a la carpeta layout del proyecto
+## Adding an image (SVG losses color)
+* Pick any image and add it to the proyect:
+* Step: drag the image from the pc to the layout folder in the proyect
 
-* Paso para convertir a svg (PIERDE EL COLOR)
-* Paso1: Tranformarla de JPG... a SVG https://www.online-convert.com/result#j=c7d050ca-552a-4497-8862-ed4619db9661
-* Paso2: Trasformarla de SVG a XML https://inloop.github.io/svg2android/
-* Paso3: Añadir el  al proyecto el XML
+* Convert image to XML
+* Step 1: Transform from JPG to SVG using https://www.online-convert.com/result#j=c7d050ca-552a-4497-8862-ed4619db9661
+* Step 2: from SVG to XML https://inloop.github.io/svg2android/
+* Step 3: add it to the proyect
