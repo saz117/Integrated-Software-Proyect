@@ -2,10 +2,10 @@
 Notes app
 
 ## material.io
-* Notes-Cards: https://material.io/components/cards/android -> DONE
+* Note-Cards: https://material.io/components/cards/android -> DONE
 * Calendar: https://material.io/components/date-pickers/android#theming-date-pickers -> TODO
-* Iconos: https://fonts.google.com/icons?selected=Material+Icons  -> TODO
-* Permisos: https://material.io/design/platform-guidance/android-permissions.html#request-types  -> TODO
+* Icons: https://fonts.google.com/icons?selected=Material+Icons  -> TODO
+* Permits: https://material.io/design/platform-guidance/android-permissions.html#request-types  -> TODO
 * Search: https://material.io/design/navigation/search.html#expandable-search -> In Progress
 * Navigation Buttons: https://material.io/components/bottom-navigation#anatomy -> In Progress
 
